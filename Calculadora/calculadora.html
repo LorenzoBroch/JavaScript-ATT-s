@@ -12,7 +12,7 @@
         <form action="#" method="post">
             <h1>Calculadora</h1>
             <div>
-                <label for="escolha">Escolha Operação:</label>
+                <label for="escolha">Escolha uma operação:</label>
                 <select name="escolha" id="escolha">
                   <option selected disabled>Escolha uma opção</option>
                   <option value="Adicao">Adição</option>
@@ -27,16 +27,20 @@
                 <br>
                 <input type="number" id="numero1" nome="numero1">
             </div>
-            <div>
+            <div id="DivNumero2">
                 <label for="numero2">Segundo Número</label>
                 <br>
                 <input type="number" id="numero2" nome="numero2">
             </div>
-            <button id="calculadora" type="button" onclick="calcular()">Calcular</button>
+            <button id="botao" type="button" onclick="calcular()">Calcular</button>
+            <div id="ResultadoFinal">
+                <p>O resultado final foi:</p> 
+                <p id='mostrarResultado'></p>
+            </div>
         </form>
-        <div id="ResultadoFinal">
-            <h4>O resultado final foi: </h4> <p class="resultado"></p>
-        </div>
+    </div>
+    <div id="NomeAluno">
+        <h3><i>Lorenzo dos Passos Broch</i></h3>
     </div>
 </body>
 </html>
