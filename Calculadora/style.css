@@ -1,0 +1,27 @@
+.container {
+    position: absolute;
+    border-radius:5%;
+    margin-left:40%;
+    margin-top:15%;
+    height:25%;
+    width:20%;
+    background-color: brown;
+    text-align:center;
+    color: white;
+}
+
+#DivNumero1 {
+    display: block;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+#ResultadoFinal {
+    display:flex;
+    justify-content: space-around;
+}
+.resultado {
+    color: white;
+}
