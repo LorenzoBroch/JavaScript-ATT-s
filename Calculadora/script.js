@@ -7,19 +7,19 @@ function calcular() {
 switch(operacao) {
     case 'Adicao':
         resultado = numero1 + numero2;
-        console.log(resultado)
         break
     case 'Subtracao':
         resultado = numero1 - numero2;
-        console.log(resultado);
         break
     case 'Multiplicacao':
         resultado = numero1 * numero2;
-        console.log(resultado);
         break
     case 'Divisao':
+        if (numero2 === 0) {
+            alert('Opção inválida! Impossível dividir por 0.')
+            break
+        }
         resultado = numero1 / numero2;
-        console.log(resultado);
         break
 }
 mostrarResultado.innerHTML = resultado;
